@@ -5,7 +5,7 @@ RUN apt-get update && \
 
 COPY . .
 
-RUN mvn install package
+RUN mvn clean package
 
 EXPOSE 8080
 
