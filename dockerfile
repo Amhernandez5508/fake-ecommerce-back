@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk17:alpine
+FROM openjdk:17
 
 RUN mvn install package
 
