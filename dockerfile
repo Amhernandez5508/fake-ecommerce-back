@@ -4,7 +4,7 @@ RUN apt-get install maven
 
 COPY . .
 
-RUN mvn install package
+RUN mvn clean package
 
 EXPOSE 8080
 
