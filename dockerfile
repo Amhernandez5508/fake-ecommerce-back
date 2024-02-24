@@ -6,4 +6,4 @@ RUN mvn install package
 
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "backend.jar"]
+ENTRYPOINT ["java", "-jar", "target/apiloginforjs-0.0.1-SNAPSHOT.jar"]
