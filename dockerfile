@@ -1,9 +1,9 @@
-FROM openjdk:17
+FROM openjdk:11
+
+COPY . .
 
 RUN mvn install package
 
-COPY target/apiloginforjs-0.0.1-SNAPSHOT.jar usr/src/app/backend.jar
+EXPOSE 8080
 
-WORKDIR usr/src/app
-
-CMD ["java", "-jar", "backend.jar"]
+ENTRYPOINT ["java", "-jar", "backend.jar"]
