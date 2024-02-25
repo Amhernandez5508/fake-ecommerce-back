@@ -14,5 +14,6 @@ public class ApiloginforjsApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ApiloginforjsApplication.class, args);
+        System.out.println("App running!");
 	}
 }
