@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(allowedHeaders = "*")
+@CrossOrigin(allowedHeaders = "*", origins = "*", methods = {RequestMethod.GET, RequestMethod.POST})
 @RestController
 @RequestMapping("/api/v1/products")
 public class ProductController {
